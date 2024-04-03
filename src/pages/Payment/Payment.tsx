@@ -1,89 +1,276 @@
-import React from 'react';
-import { FaCheck } from 'react-icons/fa';
-import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/Footer/Footer';
+import React from "react";
+import { FaCheck, FaTimes } from "react-icons/fa";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const Payment = () => {
-  return (
-    <div>
-      <Navbar/>
-      <section className="bg-gray-100 dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-            <p className="mb-5 font-light text-gray-700 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Essential</h3>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">No</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">12 audits/year</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">M365</p>
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Basic (2 business days)</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Within 24 hrs</p>
-              <span className="mr-2 text-2xl font-extrabold text-gray-900 dark:text-white">$199</span>
-              <span className="text-gray-600 dark:text-gray-300">/month</span>
-              <a href="#" className="block w-full py-2 mt-6 text-sm font-semibold text-center text-white bg-primary-500 rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:ring-primary-200 dark:focus:ring-primary-700">Get started</a>
+    return (
+        <div className="bg-gray-100 min-h-screen">
+            <Navbar />
+            <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-gray-900 sm:text-4xl">
+                    Choose a Plan
+                </h2>
+                <p className="mt-4 text-lg text-center text-gray-600">
+                    Select the plan that aligns perfectly with your
+                    requirements, or contact us for a personalized Enterprise
+                    solution tailored to your organization's unique needs.
+                    Unlock the flexibility and power of Kloudrakshak today!
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 ">
+                    {/* Essential Plan Card */}
+                    <div className="bg-white rounded-lg shadow-md p-6 ">
+                        <h3 className="text-lg font-semibold text-gray-900 text-center">
+                            Essential
+                        </h3>
+                        <div className="flex justify-center items-center mt-4 mb-6">
+                            <p className="text-xl font-semibold text-gray-900">
+                                $199
+                            </p>
+                            <p className="text-gray-600 ml-1">/ month</p>
+                        </div>
+                        <ul className="text-sm text-gray-600">
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Compliance Reporting: No</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>
+                                    Configuration Audits: 12 audits/year
+                                </span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Multi-Cloud Support: M365</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Remediation Support: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Customized Reports: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Free On-call Support: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>
+                                    Priority Support: Basic (2 business days)
+                                </span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Report Delivery: Within 24 hrs</span>
+                            </li>
+                        </ul>
+                        <button className="block w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Choose Plan
+                        </button>
+                    </div>
+
+                    {/* Advanced Plan Card */}
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 text-center">
+                            Advanced
+                        </h3>
+                        <div className="flex justify-center items-center mt-4 mb-6">
+                            <p className="text-xl font-semibold text-gray-900">
+                                $999
+                            </p>
+                            <p className="text-gray-600 ml-1">/ month</p>
+                        </div>
+                        <ul className="text-sm text-gray-600">
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Compliance Reporting: Yes</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>
+                                    Configuration Audits: 36 audits/year
+                                </span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Multi-Cloud Support: M365, AWS</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Remediation Support: ✔️</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Customized Reports: ✔️</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Free On-call Support: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>
+                                    Priority Support: Basic (2 business days)
+                                </span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Report Delivery: Within 24 hrs</span>
+                            </li>
+                        </ul>
+                        <button className="block w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Choose Plan
+                        </button>
+                    </div>
+
+                    {/* Enterprise Plan Card */}
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 text-center">
+                            Enterprise
+                        </h3>
+                        <div className="flex justify-center items-center mt-4 mb-6">
+                            <p className="text-xl font-semibold text-gray-900">
+                                $1499
+                            </p>
+                            <p className="text-gray-600 ml-1">/ month</p>
+                        </div>
+                        <ul className="text-sm text-gray-600">
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Compliance Reporting: Yes</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Configuration Audits: Unlimited</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Multi-Cloud Support: M365, AWS, GCP</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Remediation Support: ✔️</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Customized Reports: ✔️</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Free On-call Support: ✔️</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Priority Support: Premium (24/7)</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Report Delivery: Real-time</span>
+                            </li>
+                        </ul>
+                        <button className="block w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Choose Plan
+                        </button>
+                    </div>
+
+                    {/* FLEXI Plan Card */}
+                    <div className="bg-white rounded-lg shadow-md p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 text-center">
+                            FLEXI
+                        </h3>
+                        <div className="flex justify-center items-center mt-4 mb-6">
+                            <p className="text-xl font-semibold text-gray-900">
+                                $899
+                            </p>
+                            <p className="text-gray-600 ml-1">/ month</p>
+                        </div>
+                        <ul className="text-sm text-gray-600">
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Compliance Reporting: Yes</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                {/* <span>
+                                    Configuration Audits: 24 audits/year
+                                </span> */}
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>
+                                    {<FaCheck className="text-green-500" />}
+                                </span> */}
+                                <span>Multi-Cloud Support: M365, AWS</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Remediation Support: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Customized Reports: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Free On-call Support: ❌</span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>
+                                    Priority Support: Basic (2 business days)
+                                </span>
+                            </li>
+                            <li className="flex items-center space-x-1">
+                                {/* <span>{<FaTimes />}</span> */}
+                                <span>Report Delivery: Within 24 hrs</span>
+                            </li>
+                        </ul>
+                        <button className="block w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Advanced</h3>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Yes</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">36 audits/year</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">M365, AWS</p>
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Priority (8 hrs)</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Within 4 hrs</p>
-              <span className="mr-2 text-2xl font-extrabold text-gray-900 dark:text-white">$999</span>
-              <span className="text-gray-600 dark:text-gray-300">/month</span>
-              <a href="#" className="block w-full py-2 mt-6 text-sm font-semibold text-center text-white bg-primary-500 rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:ring-primary-200 dark:focus:ring-primary-700">Get started</a>
-            </div>
-            <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Enterprise</h3>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Yes</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Unlimited</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">AWS, Azure, M365</p>
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <p className="mb-6 text-gray-600 dark:text-gray-300">VIP (30 mins)</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Within 30 mins</p>
-              <span className="mr-2 text-2xl font-extrabold text-gray-900 dark:text-white">$1999</span>
-              <span className="text-gray-600 dark:text-gray-300">/month</span>
-              <a href="#" className="block w-full py-2 mt-6 text-sm font-semibold text-center text-white bg-primary-500 rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:ring-primary-200 dark:focus:ring-primary-700">Get started</a>
-            </div>
-            <div className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">FLEXI</h3>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Yes</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">1</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">All</p>
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <FaCheck className="mb-2 text-green-500" />
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Priority (8 hrs)</p>
-              <p className="mb-6 text-gray-600 dark:text-gray-300">Within 4 hrs</p>
-              <span className="mr-2 text-2xl font-extrabold text-gray-900 dark:text-white">$199</span>
-              <span className="text-gray-600 dark:text-gray-300">/scan</span>
-              <a href="#" className="block w-full py-2 mt-6 text-sm font-semibold text-center text-white bg-primary-500 rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:ring-primary-200 dark:focus:ring-primary-700">Get started</a>
-            </div>
-          </div>
+            <Footer />
         </div>
-      </section>
-      <Footer/>
-    </div>
-  );
+    );
 };
 
 export default Payment;

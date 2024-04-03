@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
                     href="/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
-                    <img src={logo} className="h-10" alt="Flowbite Logo" />
+                    <img src="/KR.png" className="h-14" alt="Flowbite Logo" />
                 </a>
                 <button
                     onClick={toggleNavbar}
@@ -37,24 +37,25 @@ const Navbar: React.FC = () => {
                         <li>
                             <a
                                 href="/"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent items-center"
+                                className="block py-3 px-2 md:p-0 text-gray-900 rounded-md hover:bg-gray-500 hover:p-2 md:border-0 dark:text-white md:dark:hover:dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-blue-900 items-center group-hover:underline"
                                 aria-current="page"
                             >
                                 Home
                             </a>
                         </li>
+
                         <li>
                             <a
                                 href="/about"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-3 px-2 md:p-0 text-gray-900 rounded-md hover:bg-gray-500 hover:p-2 md:border-0 dark:text-white md:dark:hover:dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-blue-900 items-center group-hover:underline"
                             >
                                 About
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/payment"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                href="/plans"
+                                className="block py-3 px-2 md:p-0 text-gray-900 rounded-md hover:bg-gray-500 hover:p-2 md:border-0 dark:text-white md:dark:hover:dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-blue-900 items-center group-hover:underline"
                             >
                                 Plans
                             </a>
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
                         <li>
                             <a
                                 href="/contact"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-3 px-2 md:p-0 text-gray-900 rounded-md hover:bg-gray-500 hover:p-2 md:border-0 dark:text-white md:dark:hover:dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-blue-900 items-center group-hover:underline"
                             >
                                 Contact
                             </a>
@@ -70,7 +71,7 @@ const Navbar: React.FC = () => {
                         <li>
                             <a
                                 href="/help"
-                                className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-3 px-2 md:p-0 text-gray-900 rounded-md hover:bg-gray-500 hover:p-2 md:border-0 dark:text-white md:dark:hover:dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-blue-900 items-center group-hover:underline"
                             >
                                 Help
                             </a>
