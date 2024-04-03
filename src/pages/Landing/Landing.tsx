@@ -17,7 +17,7 @@ const Landing: React.FC = () => {
 
             <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
                 <div className="max-w-screen-xl mx-auto">
-                    <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">Designed for business teams like yours</h2>
+                    <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">Key Features </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                         <FeatureCard icon="marketing" title="Marketing" description="Plan it, create it, launch it. Collaborate seamlessly with all the organization and hit your marketing goals every month with our marketing plan." />
                         <FeatureCard icon="legal" title="Legal" description="Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you." />
