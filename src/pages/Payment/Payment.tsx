@@ -14,15 +14,17 @@ const Payment = () => {
                             Designed for business teams like yours
                         </h2>
                         <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                            Here at Flowbite we focus on markets where
-                            technology, innovation, and capital can unlock
-                            long-term value and drive economic growth.
+                            Select the plan that aligns perfectly with your
+                            requirements, or contact us for a personalized
+                            Enterprise solution tailored to your organization's
+                            unique needs. Unlock the flexibility and power of
+                            Kloudrakshak today!
                         </p>
                     </div>
                     <div className="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0">
                         <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 className="mb-4 text-2xl font-semibold">
-                                Starter
+                                Essential
                             </h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                                 Best option for personal use & for your next
@@ -30,7 +32,7 @@ const Payment = () => {
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">
-                                    $29
+                                    $199
                                 </span>
                                 <span className="text-gray-500 dark:text-gray-400">
                                     /month
@@ -42,107 +44,54 @@ const Payment = () => {
                                 className="mb-8 space-y-4 text-left"
                             >
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>Individual configuration</span>
+                                    <FaTimes />
+                                    <span>Compliance Reporting</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>No setup, or hidden fees</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
                                     <span>
-                                        Team size:{" "}
-                                        <span className="font-semibold">
-                                            1 developer
-                                        </span>
+                                        Configuration Audits:12 audits/year
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
+                                    <span>Multi-Cloud Support:M365</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaTimes />
+                                    <span>Remediation Support</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaTimes />
+                                    <span>Customized Reports</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaTimes />
+                                    <span>Free On-call Support</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
                                     <span>
-                                        Premium support:{" "}
-                                        <span className="font-semibold">
-                                            6 months
-                                        </span>
+                                        Priority Support: Basic (2 business
+                                        days)
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>
-                                        Free updates:{" "}
-                                        <span className="font-semibold">
-                                            6 months
-                                        </span>
-                                    </span>
+                                    <FaCheck size={20} />
+                                    <span>Report Delivery:Within 24 hrs</span>
                                 </li>
                             </ul>
                             <a
                                 href="#"
-                                className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                                className="text-black bg-[#77E2FF] hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-400  "
                             >
-                                Get started
+                                Buy
                             </a>
                         </div>
 
                         <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 className="mb-4 text-2xl font-semibold">
-                                Company
+                                Advanced
                             </h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                                 Relevant for multiple users, extended & premium
@@ -150,7 +99,7 @@ const Payment = () => {
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">
-                                    $99
+                                    $999
                                 </span>
                                 <span className="text-gray-500 dark:text-gray-400">
                                     /month
@@ -162,101 +111,50 @@ const Payment = () => {
                                 className="mb-8 space-y-4 text-left"
                             >
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>Individual configuration</span>
+                                    <FaCheck size={20} />
+                                    <span>Compliance Reporting</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>No setup, or hidden fees</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
                                     <span>
-                                        Team size:{" "}
-                                        <span className="font-semibold">
-                                            10 developers
-                                        </span>
+                                        Configuration Audits:36 audits/year
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
+                                    <span>Multi-Cloud Support:M365, AWS</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Remediation Support</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Customized Reports</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
                                     <span>
-                                        Premium support:{" "}
-                                        <span className="font-semibold">
-                                            24 months
-                                        </span>
+                                        Free On-call Support:Mon-Fri 10 am – 5
+                                        pm IST
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
                                     <span>
-                                        Free updates:{" "}
-                                        <span className="font-semibold">
-                                            24 months
-                                        </span>
+                                        Priority Support: Priority (8 hrs)
                                     </span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Report Delivery:Within 4 hrs</span>
                                 </li>
                             </ul>
                             <a
                                 href="#"
-                                className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                                className="text-black bg-[#77E2FF] hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-400  "
                             >
-                                Get started
+                                Buy
                             </a>
                         </div>
 
@@ -270,7 +168,7 @@ const Payment = () => {
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">
-                                    $499
+                                    $1999
                                 </span>
                                 <span className="text-gray-500 dark:text-gray-400">
                                     /month
@@ -282,106 +180,50 @@ const Payment = () => {
                                 className="mb-8 space-y-4 text-left"
                             >
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>Individual configuration</span>
+                                    <FaCheck size={20} />
+                                    <span>Compliance Reporting</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>No setup, or hidden fees</span>
+                                    <FaCheck size={20} />
+                                    <span>Configuration Audits:Unlimited</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
                                     <span>
-                                        Team size:{" "}
-                                        <span className="font-semibold">
-                                            100+ developers
-                                        </span>
+                                        Multi-Cloud Support:AWS, Azure, M365
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>
-                                        Premium support:{" "}
-                                        <span className="font-semibold">
-                                            36 months
-                                        </span>
-                                    </span>
+                                    <FaCheck size={20} />
+                                    <span>Remediation Support</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>
-                                        Free updates:{" "}
-                                        <span className="font-semibold">
-                                            36 months
-                                        </span>
-                                    </span>
+                                    <FaCheck size={20} />
+                                    <span>Customized Reports</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Free On-call Support:24*7</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Priority Support: VIP (30 mins)</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
+                                    <span>Report Delivery:Within 30 minss</span>
                                 </li>
                             </ul>
                             <a
                                 href="#"
-                                className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                                className="text-black bg-[#77E2FF] hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-400  "
                             >
-                                Get started
+                                Buy
                             </a>
                         </div>
                         <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                             <h3 className="mb-4 text-2xl font-semibold">
-                                Enterprise
+                                FLEXI
                             </h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                                 Best for large scale uses and extended
@@ -389,7 +231,7 @@ const Payment = () => {
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">
-                                    $499
+                                    $199
                                 </span>
                                 <span className="text-gray-500 dark:text-gray-400">
                                     /month
@@ -401,101 +243,48 @@ const Payment = () => {
                                 className="mb-8 space-y-4 text-left"
                             >
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>Individual configuration</span>
+                                    <FaCheck size={20} />
+                                    <span>Compliance Reporting</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>No setup, or hidden fees</span>
+                                    <FaCheck size={20} />
+                                    <span>Configuration Audits:1</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
+                                    <span>Multi-Cloud Support:All</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaTimes size={20} />
+                                    <span>Remediation Support</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaTimes size={20} />
+                                    <span>Customized Reports</span>
+                                </li>
+                                <li className="flex items-center space-x-3">
+                                    <FaCheck size={20} />
                                     <span>
-                                        Team size:{" "}
-                                        <span className="font-semibold">
-                                            100+ developers
-                                        </span>
+                                        Free On-call Support:Mon-Fri 10 am – 5
+                                        pm IST
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <FaCheck size={20} />
                                     <span>
-                                        Premium support:{" "}
-                                        <span className="font-semibold">
-                                            36 months
-                                        </span>
+                                        Priority Support: Priority (8 hrs)
                                     </span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <svg
-                                        className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
-                                    <span>
-                                        Free updates:{" "}
-                                        <span className="font-semibold">
-                                            36 months
-                                        </span>
-                                    </span>
+                                    <FaCheck size={20} />
+                                    <span>Report Delivery:Within 4 hrs</span>
                                 </li>
                             </ul>
                             <a
                                 href="#"
-                                className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
+                                className="text-black bg-[#77E2FF] hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-cyan-400  "
                             >
-                                Get started
+                                Buy
                             </a>
                         </div>
                     </div>

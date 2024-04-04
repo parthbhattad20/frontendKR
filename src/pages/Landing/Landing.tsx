@@ -10,6 +10,8 @@ import {
     FaMoneyBillAlt,
 } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import bg from "../../images/bgimage.jpeg";
+import bg2 from "../../images/bgimage2.png";
 
 const Landing: React.FC = () => {
     return (
@@ -19,14 +21,14 @@ const Landing: React.FC = () => {
             <div
                 className="flex flex-col items-center justify-center bg-gray-100 min-h-screen"
                 style={{
-                    backgroundImage: `url(https://img.freepik.com/free-vector/abstract-secure-technology-background_23-2148331624.jpg)`,
+                    backgroundImage: `url(${bg2})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
             >
                 <div className="text-center text-white mx-4 md:mx-10 lg:mx-20 xl:mx-40">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        Welcome to Kloudraksha -{" "}
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#00A8D5] w-2/3">
+                        Welcome to Kloudraksha{" "}
                         <span>
                             <Typewriter
                                 words={[
@@ -34,34 +36,26 @@ const Landing: React.FC = () => {
                                     "Optimize Your Cloud ",
                                     "Protect Your Cloud ",
                                 ]}
+                                cursorColor="white"
                                 loop={100}
                                 cursor
                                 cursorStyle="|"
                                 typeSpeed={20}
-                                deleteSpeed={50}
+                                deleteSpeed={60}
                                 delaySpeed={1000}
                             />
                         </span>
                     </h1>
-                    <p className="text-lg md:text-xl mb-8 leading-relaxed">
+                    <p className="text-lg md:text-xl mb-8  text-justify w-2/3">
                         Unlock the power of seamless cloud configuration audits
                         with Kloudrakshak. Revolutionizing the way you conduct
                         compliance checks on cloud platforms, we bring you a
                         cutting-edge SaaS solution that ensures unparalleled
-                        efficiency and accuracy. Say goodbye to lengthy audits
-                        that consume days of your time. With Kloudrakshak, you
-                        can achieve compliance reporting in just 4-5 hours,
-                        allowing you to focus on what truly matters - driving
-                        your business forward. Experience the ease of
-                        identifying and resolving configuration discrepancies
-                        across various cloud platforms, all within a single,
-                        user-friendly interface. Trust Kloudrakshak to safeguard
-                        your cloud infrastructure and maintain compliance
-                        effortlessly.
+                        efficiency and accuracy.
                     </p>
                     <a
                         href="/auth"
-                        className="inline-block bg-[#00A8D5] hover:bg-cyan-600  text-white font-bold py-3 px-6 rounded-full transition duration-300"
+                        className="inline-block  bg-[#00A8D5] hover:bg-cyan-600  text-white font-bold py-3 px-6 rounded-full transition duration-300 "
                     >
                         Get started
                     </a>
@@ -119,11 +113,7 @@ interface FeatureCardProps {
     description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({
-    icon,
-    title,
-    description,
-}) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
     const renderIcon = (icon: string) => {
         switch (icon) {
             case "Rapid Compliance Reporting":
@@ -177,7 +167,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900">
                 {title}
             </h3>
-            <p className="text-sm md:text-base text-center text-gray-600">
+            <p className="text-sm md:text-base text-center text-gray-600 text-justify">
                 {description}
             </p>
         </div>
