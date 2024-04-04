@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import logo from "../../images/KloudRakhsa.png";
+import logo from "../../images/KR_Final_Shield.png";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
                     href="/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
-                    <img src="/KR.png" className="h-14" alt="Flowbite Logo" />
+                    <img src="/KR_Final_Shield.png" className="h-14" alt="KloudRaksha Logo" />
                 </a>
                 <button
                     onClick={toggleNavbar}

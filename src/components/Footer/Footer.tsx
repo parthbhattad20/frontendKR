@@ -1,7 +1,7 @@
 import { FaRegEnvelope, FaUser, FaShieldAlt, FaPhone } from "react-icons/fa";
 import { IoIosLock } from "react-icons/io";
 import { MdLanguage } from "react-icons/md";
-import logo from "../../images/KloudRakhsa.png";
+import logo from "../../images/KR_Final_2.png";
 
 const Footer = () => {
     return (
@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap text-left lg:text-left">
                     <div className="w-full lg:w-6/12 px-4">
-                        <img src={logo} className="h-16" alt="logo" />
+                        <img src={logo} className="h-14" alt="logo" />
                         <h4 className="text-3xl fonat-semibold text-blueGray-700">
                             Let's keep in touch!
                         </h4>
@@ -104,7 +104,7 @@ const Footer = () => {
                                 href="https://www.newtonsapple.in"
                                 className="text-blueGray-500 hover:text-blueGray-800"
                             >
-                                Newtons Apple Security Solutions.
+                                 Newtons Apple Security Solutions.
                             </a>
                             .
                         </div>

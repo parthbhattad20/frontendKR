@@ -27,26 +27,26 @@ const Landing: React.FC = () => {
                 }}
             >
                 <div className="text-center text-white mx-4 md:mx-10 lg:mx-20 xl:mx-40">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#00A8D5] w-2/3">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#2351E5] w-2/3">
                         Welcome to Kloudraksha{" "}
-                        <span>
+                        <br /><span>
                             <Typewriter
                                 words={[
-                                    "Secure Your Cloud ",
-                                    "Optimize Your Cloud ",
-                                    "Protect Your Cloud ",
+                                    "Secure Your Cloud. ",
+                                    "Optimize Your Cloud. ",
+                                    "Protect Your Cloud. ",
                                 ]}
                                 cursorColor="white"
                                 loop={100}
                                 cursor
                                 cursorStyle="|"
-                                typeSpeed={20}
-                                deleteSpeed={60}
-                                delaySpeed={1000}
+                                typeSpeed={40}
+                                deleteSpeed={30}
+                                delaySpeed={1500}
                             />
                         </span>
                     </h1>
-                    <p className="text-lg md:text-xl mb-8  text-justify w-2/3">
+                    <p className="text-lg md:text-l mb-8  text-justify w-2/3">
                         Unlock the power of seamless cloud configuration audits
                         with Kloudrakshak. Revolutionizing the way you conduct
                         compliance checks on cloud platforms, we bring you a
@@ -55,7 +55,7 @@ const Landing: React.FC = () => {
                     </p>
                     <a
                         href="/auth"
-                        className="inline-block  bg-[#00A8D5] hover:bg-cyan-600  text-white font-bold py-3 px-6 rounded-full transition duration-300 "
+                        className="inline-block  bg-[#6B8AFD]  hover:bg-[#2351E5]  text-white font-bold py-3 px-6 rounded-full transition duration-200 "
                     >
                         Get started
                     </a>
