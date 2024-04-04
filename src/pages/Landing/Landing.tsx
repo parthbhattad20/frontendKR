@@ -101,6 +101,7 @@ const Landing: React.FC = () => {
                     </div>
                 </div>
             </section>
+            <hr className="my-6 border-blueGray-300" />
 
             <Footer />
         </>
