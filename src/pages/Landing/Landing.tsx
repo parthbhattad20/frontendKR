@@ -129,21 +129,21 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             case "Rapid Compliance Reporting":
                 return (
                     <FaBullseye
-                        color="cyan"
+                        color="#77E2FF"
                         className="w-8 h-8 text-primary-600"
                     />
                 );
             case "Unlimited Configuration Audits":
                 return (
                     <FaChartBar
-                        color="cyan"
+                        color="#77E2FF"
                         className="w-8 h-8 text-primary-600 "
                     />
                 );
             case "Multi-Cloud Support":
                 return (
                     <FaCloud
-                        color="cyan"
+                        color="#77E2FF"
                         className="w-8 h-8 text-primary-600"
                     />
                 );
@@ -154,14 +154,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             case "Customizable Reports":
                 return (
                     <FaFileAlt
-                        color="cyan"
+                        color="#77E2FF"
                         className="w-8 h-8 text-primary-600"
                     />
                 );
             case "Operations":
                 return (
                     <FaMoneyBillAlt
-                        color="cyan"
+                        color="#77E2FF"
                         className="w-8 h-8 text-primary-600"
                     />
                 );
